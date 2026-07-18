@@ -1,6 +1,6 @@
 resource "aws_instance" "web" {
   count         = var.instance_count
-  ami           = "ami-0fb110df4c5094d21"
+  ami           = var.ec2_ami_id
   instance_type = var.instance_type
 
   tags = {

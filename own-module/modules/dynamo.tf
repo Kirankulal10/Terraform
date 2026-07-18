@@ -4,7 +4,7 @@ resource "aws_dynamodb_table" "basic-dynamodb-table" {
   hash_key     = var.hash_key
 
   attribute {
-    name = "LockID"
+    name = var.hash_key
     type = "S"
   }
 

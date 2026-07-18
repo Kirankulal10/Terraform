@@ -26,6 +26,6 @@ variable "ec2_ami_id"{
 
 variable "hash_key"{
     description="this is hash_key"
-    type=number
+    type=string
 
 }
